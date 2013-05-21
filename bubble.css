@@ -1,0 +1,52 @@
+	a{
+		text-decoration:none;
+	}
+	a:hover{
+		border-bottom:1px dotted #317082;
+	}
+	#bubble_tooltip{
+		width:147px;
+		position:absolute;
+		display:none;
+	}
+	#bubble_tooltip .bubble_middle{
+				  display:block;
+				  position:absolute;
+				  background-color:	#333 ;
+				
+				  padding: 12px;
+				  z-index: 999;
+				  color: #EEE;			 
+				  border-radius: 10px;
+				  margin: 25px;
+				  border: 0px solid #111;
+				  box-shadow: 1px 1px 2px 	#CCC;
+				  -moz-box-shadow: 1px 1px 2px 	#CCC;
+				  -webkit-border-shadow: 1px 1px 2px 	#CCC;
+				  text-shadow: 0px 0px 15px #999;
+				  	-moz-animation:mymove .25s linear;  
+					-webkit-animation:mymove .25s linear; 
+					-o-animation:mymove .25s linear; 
+					-ms-animation:mymove .25s linear; 
+					animation:mymove .25s linear;
+	}
+
+	#bubble_tooltip .bubble_middle span{
+		position:relative;
+		top:-8px;
+		font-size:13px;
+	}
+
+	@-moz-keyframes mymove {
+		0%{ -moz-transform:scale(0,0); opacity:0;}
+		50%{ -moz-transform:scale(1.2,1.2); opacity:0.3; }
+		75%{ -moz-transform:scale(0.9,0.9); opacity:0.7;}
+		100%{ -moz-transform:scale(1,1); opacity:1;}
+	}
+
+	@-webkit-keyframes mymove {
+		0%{ -webkit-transform:scale(0,0); opacity:0;}
+		50%{ -webkit-transform:scale(1.2,1.2); opacity:0.3;}
+		75%{ -webkit-transform:scale(0.9,0.9); opacity:0.7;}
+		100%{ -webkit-transform:scale(1,1); opacity:1;}
+	}
